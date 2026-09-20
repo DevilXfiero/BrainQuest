@@ -34,9 +34,12 @@ docs/        Architecture, ADRs, PROJECT_CONTEXT.md
 ## Commands (update as they become real)
 - Web dev: `cd apps/web && npm run dev`
 - Web lint: `cd apps/web && npm run lint`
-- API dev: `cd apps/api && uvicorn main:app --reload`
-- API tests: `cd apps/api && pytest`
-- API lint: `cd apps/api && ruff check .`
+- Web types / build: `cd apps/web && npx tsc --noEmit` / `npm run build`
+- API setup: `cd apps/api && uv sync`
+- API dev: `cd apps/api && uv run uvicorn main:app --reload`
+- API tests: `cd apps/api && uv run pytest`
+- API lint / format check: `cd apps/api && uv run ruff check . && uv run ruff format --check .`
+- Live URLs and deploy settings: `docs/DEPLOY.md`
 
 ## Conventions
 - Python: type hints, Pydantic models for all request/response bodies, ruff formatting

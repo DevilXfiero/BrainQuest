@@ -82,4 +82,17 @@ XP examples: new note +10, card review +5, 7-day streak bonus.
 - Week 4: hooks (e.g., ruff on edit), MCP servers, custom commands, subagents.
 
 ## 10. Current status
-- [ ] Day 1 not started. Update this section as milestones are completed.
+Update this section as milestones are completed.
+
+**Day 1 (2026-09-19/20)**
+- [x] Repo skeleton, `.gitignore`, `.env.example` templates
+- [x] GitHub Project board ("BrainQuest Roadmap") + issues for Weeks 1-2
+- [x] FastAPI scaffold: `/health`, CORS, pytest, ruff (Python 3.12, uv)
+- [x] Next.js scaffold: TypeScript strict, Tailwind, shadcn/ui, API health badge
+- [x] Deployed: web on Vercel, API on Render (see `docs/DEPLOY.md`); CORS verified from outside
+- [ ] Confirm the live page shows "API status: ok" in a browser
+- [ ] UptimeRobot monitor on `/health` (keeps the free Render instance awake)
+
+**Decisions made along the way**
+- Python 3.12 via uv (system Python is 3.14); Render pinned with `PYTHON_VERSION`.
+- Commit straight to `main` (no PRs) for now. Week 2's "branch protection" item needs revisiting.

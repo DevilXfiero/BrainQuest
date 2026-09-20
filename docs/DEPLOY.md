@@ -59,5 +59,7 @@ Add an UptimeRobot HTTP monitor on `<render-url>/health` (5-minute interval) so 
 
 ## Live URLs
 
-- Web: _fill in after deploy_
-- API: _fill in after deploy_
+- Web: https://brain-quest-sable.vercel.app
+- API: https://brainquest-api-isws.onrender.com (health: `/health`, docs: `/docs`)
+
+Verified 2026-09-20: API `/health` returns 200; CORS allows exactly the Vercel origin.
