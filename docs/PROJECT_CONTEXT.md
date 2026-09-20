@@ -90,8 +90,10 @@ Update this section as milestones are completed.
 - [x] FastAPI scaffold: `/health`, CORS, pytest, ruff (Python 3.12, uv)
 - [x] Next.js scaffold: TypeScript strict, Tailwind, shadcn/ui, API health badge
 - [x] Deployed: web on Vercel, API on Render (see `docs/DEPLOY.md`); CORS verified from outside
-- [ ] Confirm the live page shows "API status: ok" in a browser
-- [ ] UptimeRobot monitor on `/health` (keeps the free Render instance awake)
+- [x] Live page shows "API status: ok" in a browser (confirmed by owner)
+- [x] UptimeRobot monitor on `/health` (keeps the free Render instance awake)
+
+**Day 1 complete.** Milestone toward Week 1: live URL works end to end. Next: Supabase + auth (issue #2), Alembic (issue #3).
 
 **Decisions made along the way**
 - Python 3.12 via uv (system Python is 3.14); Render pinned with `PYTHON_VERSION`.
